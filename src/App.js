@@ -41,7 +41,7 @@ const App = () => {
           }}
         />
         <div className="counter">
-          Characters remaining: {count}
+          Characters remaining only: {count}
           {warning && <span className="warning" style={{ color: "red" }}> Warning: Only 10% remaining!</span>}
         </div>
         <button className="submit" disabled={count < 0} style={{ marginTop: "10px" }}>
