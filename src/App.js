@@ -26,7 +26,8 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div> 
+      <h1>Enter Your Message Here</h1>
       <form onSubmit={handleSubmit}>
         <textarea className="textarea"
           value={text}
