@@ -34,7 +34,9 @@ const App = () => {
           onChange={handleChange}
           maxLength={100}
           style={{
-            borderRadius: "5px",
+            width:"500px",
+            height:"200px",
+            borderRadius: "15px",
             padding: "10px",
             fontSize: "16px",
             marginBottom: "10px",
