@@ -26,31 +26,26 @@ const App = () => {
   };
 
   return (
-    <div> 
+    <div className="container"> 
       <h1>Enter Your Message Here</h1>
       <form onSubmit={handleSubmit}>
         <textarea className="textarea"
           value={text}
           onChange={handleChange}
           maxLength={100}
-          style={{
-            width:"500px",
-            height:"200px",
-            borderRadius: "15px",
-            padding: "10px",
-            fontSize: "16px",
-            marginBottom: "10px",
-          }}
+          
         />
         <div className="counter">
           Characters remaining: {count}
           {warning && <span className="warning" style={{ color: "red" }}> Warning: Only 10% remaining!</span>}
         </div>
-        <button className="submit" disabled={count < 0} style={{ marginTop: "10px" }}>
+        <button className="submit" disabled={count < 0} style={{ marginTop: "10px", textAlign:"center" }}>
           Submit
         </button>
+        <hr/>
       </form>
       {submittedText && <p>{submittedText}</p>}
+     
     </div>
   );
 };

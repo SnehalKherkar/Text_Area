@@ -1,9 +1,22 @@
+.container{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+ 
+  
+  
+  
+}
 .textarea {
   border: 2px solid #d80e0e;
   border-radius: 5px;
   padding: 10px;
   font-size: 16px;
-  margin-bottom: 10px;
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+text-align: center;
+box-shadow: 3px 4px 5px grey;
 }
 
 .highlight {
@@ -13,6 +26,11 @@
 .counter {
   color: rgb(55, 26, 218);
   margin-top: 10px;
+  font-size: 22px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .warning {
@@ -20,13 +38,16 @@
 }
 
 .submit {
-  margin-top: 10px;
+  
   background-color: #4caf50;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   font-size: 16px;
+  margin-top: 10px;
+  margin-left: 112px;
+    margin-bottom: 10px;
 }
 
 .submit:disabled {
